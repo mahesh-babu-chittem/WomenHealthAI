@@ -1,0 +1,28 @@
+GLOBAL EXPLANATION REPORT
+==================================================
+
+TOP 10 FEATURES
+
+mean_rmssd : 420.0263
+sleep_score : 380.8733
+SRS : 354.8483
+MRS : 349.2780
+mean_lf : 326.0655
+RHRS : 307.6925
+mean_hf : 307.0340
+HRS : 298.1542
+resting_hr : 291.9631
+BRS : 252.4247
+
+TOP 10 ATTENTION DAYS
+
+Day 0 : 0.080465
+Day -1 : 0.077617
+Day -8 : 0.076050
+Day -2 : 0.075772
+Day -7 : 0.075676
+Day -6 : 0.075386
+Day -3 : 0.075073
+Day -9 : 0.074653
+Day -4 : 0.074556
+Day -5 : 0.074416

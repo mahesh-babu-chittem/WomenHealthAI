@@ -1,0 +1,18 @@
+LOCAL EXPLANATION REPORT
+==================================================
+
+Actual RHRS: 43.116
+Predicted RHRS: 58.969
+
+TOP CONTRIBUTORS
+
+mean_lf | Value=584.531 | Contribution=190595.516
+mean_hf | Value=459.495 | Contribution=141080.567
+sleep_score | Value=79.000 | Contribution=30088.991
+mean_rmssd | Value=51.650 | Contribution=21694.407
+MRS | Value=49.991 | Contribution=17460.814
+SRS | Value=47.943 | Contribution=17012.423
+HRS | Value=50.000 | Contribution=14907.709
+resting_hr | Value=50.121 | Contribution=14633.437
+RHRS | Value=46.248 | Contribution=14230.151
+BRS | Value=34.004 | Contribution=8583.510
