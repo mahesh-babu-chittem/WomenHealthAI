@@ -1,0 +1,95 @@
+{
+  "experiment": "WomenHealthAI Ablation Study",
+  "task": "14-day RHRS forecasting",
+  "metrics": {
+    "MAE": "lower_is_better",
+    "RMSE": "lower_is_better",
+    "R2": "higher_is_better",
+    "r": "higher_is_better"
+  },
+  "results": [
+    {
+      "configuration": "Full WomenHealthAI (TFT + all RHRS dimensions)",
+      "MAE": 5.342,
+      "RMSE": 6.834,
+      "R2": 0.449,
+      "r": 0.679,
+      "ablation_type": "model_component",
+      "target_mode": "full_rhrs"
+    },
+    {
+      "configuration": "w/o Hormonal Resilience (HRS)",
+      "MAE": 5.612,
+      "RMSE": 7.091,
+      "R2": 0.415,
+      "r": 0.654,
+      "ablation_type": "input_removal",
+      "target_mode": "full_rhrs"
+    },
+    {
+      "configuration": "w/o Physiological Resilience (PRS)",
+      "MAE": 5.574,
+      "RMSE": 7.048,
+      "R2": 0.421,
+      "r": 0.659,
+      "ablation_type": "input_removal",
+      "target_mode": "full_rhrs"
+    },
+    {
+      "configuration": "w/o Metabolic Resilience (MRS)",
+      "MAE": 5.481,
+      "RMSE": 6.962,
+      "R2": 0.432,
+      "r": 0.667,
+      "ablation_type": "input_removal",
+      "target_mode": "full_rhrs"
+    },
+    {
+      "configuration": "w/o Behavioral Resilience (BRS)",
+      "MAE": 5.528,
+      "RMSE": 7.005,
+      "R2": 0.426,
+      "r": 0.663,
+      "ablation_type": "input_removal",
+      "target_mode": "full_rhrs"
+    },
+    {
+      "configuration": "w/o Symptom Resilience (SRS)",
+      "MAE": 5.493,
+      "RMSE": 6.978,
+      "R2": 0.43,
+      "r": 0.665,
+      "ablation_type": "input_removal",
+      "target_mode": "full_rhrs"
+    },
+    {
+      "configuration": "Equal-weight RHRS",
+      "MAE": 5.438,
+      "RMSE": 6.921,
+      "R2": 0.437,
+      "r": 0.671,
+      "ablation_type": "target_weighting",
+      "target_mode": "equal_weight_rhrs"
+    },
+    {
+      "configuration": "w/o Temporal Attention",
+      "MAE": 5.701,
+      "RMSE": 7.142,
+      "R2": 0.408,
+      "r": 0.648,
+      "ablation_type": "model_component",
+      "target_mode": "full_rhrs"
+    },
+    {
+      "configuration": "w/o Adaptive Variable Selection",
+      "MAE": 5.657,
+      "RMSE": 7.108,
+      "R2": 0.412,
+      "r": 0.651,
+      "ablation_type": "model_component",
+      "target_mode": "full_rhrs"
+    }
+  ],
+  "target_definition": "Full RHRS target for input-removal and architectural ablations; equal-weight RHRS only for the weighting ablation.",
+  "interpretation_note": "Dimension ablations remove the selected RHRS dimension from model inputs while retaining the full RHRS target. Architectural ablations retain the full input representation and target while disabling the specified model component. The equal-weight configuration intentionally changes RHRS weighting."
+}
