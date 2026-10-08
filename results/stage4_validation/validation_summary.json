@@ -1,0 +1,53 @@
+{
+    "reliability_results.json": {
+        "cronbach_alpha": 0.16286617247761384
+    },
+    "convergent_validity.json": {
+        "sleep_score": {
+            "pearson_r": 0.4278341240716502,
+            "p_value": 1.1243198664587661e-250
+        },
+        "mean_rmssd": {
+            "pearson_r": 0.5473417560452256,
+            "p_value": 0.0
+        },
+        "stress_score": {
+            "pearson_r": -0.12506204478269947,
+            "p_value": 3.6234810315748836e-21
+        },
+        "lh": {
+            "pearson_r": 0.19187278126322865,
+            "p_value": 4.606129703891944e-48
+        },
+        "estrogen": {
+            "pearson_r": 0.2668911942650652,
+            "p_value": 6.689283343539184e-93
+        },
+        "pdg": {
+            "pearson_r": 0.1489372039272824,
+            "p_value": 1.9668491191085477e-29
+        }
+    },
+    "known_group_results.json": {
+        "sleep_score": {
+            "t_stat": 32.48832478905439,
+            "p_value": 4.8993542647225737e-197
+        },
+        "mean_rmssd": {
+            "t_stat": 42.841157369710544,
+            "p_value": 1.69574291554624e-309
+        },
+        "stress_score": {
+            "t_stat": -8.716011985805489,
+            "p_value": 4.820115158734105e-18
+        },
+        "mean_glucose": {
+            "t_stat": -10.454897022187495,
+            "p_value": 3.970907507443752e-25
+        }
+    },
+    "predictive_validity.json": {
+        "correlation": -0.33107187231701074,
+        "p_value": 7.849488138769858e-145
+    }
+}
