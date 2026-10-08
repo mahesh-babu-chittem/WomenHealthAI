@@ -1,0 +1,30 @@
+{
+    "flow_volume": {
+        "missing_count": 2470,
+        "missing_percentage": 43.6473
+    },
+    "flow_color": {
+        "missing_count": 2465,
+        "missing_percentage": 43.5589
+    },
+    "moodswing": {
+        "missing_count": 2339,
+        "missing_percentage": 41.3324
+    },
+    "sleepissue": {
+        "missing_count": 2330,
+        "missing_percentage": 41.1734
+    },
+    "appetite": {
+        "missing_count": 2329,
+        "missing_percentage": 41.1557
+    },
+    "exerciselevel": {
+        "missing_count": 2329,
+        "missing_percentage": 41.1557
+    },
+    "phase": {
+        "missing_count": 1,
+        "missing_percentage": 0.0177
+    }
+}
