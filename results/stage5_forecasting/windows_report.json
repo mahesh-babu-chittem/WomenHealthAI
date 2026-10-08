@@ -1,0 +1,30 @@
+{
+    "horizon_7": {
+        "window_size": 14,
+        "forecast_horizon": 7,
+        "samples": 4819,
+        "participants": 42,
+        "input_shape": [
+            4819,
+            14,
+            23
+        ],
+        "target_shape": [
+            4819
+        ]
+    },
+    "horizon_14": {
+        "window_size": 14,
+        "forecast_horizon": 14,
+        "samples": 4525,
+        "participants": 42,
+        "input_shape": [
+            4525,
+            14,
+            23
+        ],
+        "target_shape": [
+            4525
+        ]
+    }
+}
