@@ -1,0 +1,3 @@
+Comparison,Horizon,N_matched_cases,Baseline_Mean_Error,TFT_Mean_Error,Mean_Improvement_GRU_minus_TFT,Paired_t_stat,Paired_t_pvalue,Wilcoxon_stat,Wilcoxon_pvalue,Cohens_d_paired
+H7 TFT vs GRU,7,723,7.160065363,4.929441452,2.230623911,37.47043793,1.74E-171,0,5.06E-120,1.393540581
+H14 TFT vs GRU,14,679,7.181043625,5.341756344,1.839287281,37.60026662,5.05E-168,0,7.65E-113,1.442965798
