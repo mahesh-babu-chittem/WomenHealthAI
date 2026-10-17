@@ -1,0 +1,15 @@
+horizon,ablation_key,configuration,ablation_type,target_mode,model,MAE,RMSE,R2,r
+7,FULL,Full native TFT (all RHRS dimensions),baseline,original_rhrs,native TFT ,4.951,6.318,0.519,0.724
+7,WO_HRS,Native TFT without HRS input,input_dimension_removal,original_rhrs,native TFT ,5.203,6.573,0.489,0.7
+7,WO_PRS,Native TFT without PRS input,input_dimension_removal,original_rhrs,native TFT ,5.159,6.529,0.494,0.706
+7,WO_MRS,Native TFT without MRS input,input_dimension_removal,original_rhrs,native TFT ,5.091,6.438,0.503,0.713
+7,WO_BRS,Native TFT without BRS input,input_dimension_removal,original_rhrs,native TFT ,5.124,6.476,0.5,0.71
+7,WO_SRS,Native TFT without SRS input,input_dimension_removal,original_rhrs,native TFT ,5.102,6.451,0.504,0.712
+7,EQUAL_WEIGHT_RHRS,Native TFT with equal-weight RHRS target,target_weighting_sensitivity,equal_weight_rhrs,native TFT ,5.061,6.408,0.509,0.717
+14,FULL,Full native TFT (all RHRS dimensions),baseline,original_rhrs,native TFT ,5.361,6.858,0.446,0.677
+14,WO_HRS,Native TFT without HRS input,input_dimension_removal,original_rhrs,native TFT ,5.601,7.075,0.417,0.652
+14,WO_PRS,Native TFT without PRS input,input_dimension_removal,original_rhrs,native TFT ,5.566,7.041,0.423,0.658
+14,WO_MRS,Native TFT without MRS input,input_dimension_removal,original_rhrs,native TFT ,5.489,6.974,0.431,0.665
+14,WO_BRS,Native TFT without BRS input,input_dimension_removal,original_rhrs,native TFT ,5.521,7.011,0.427,0.661
+14,WO_SRS,Native TFT without SRS input,input_dimension_removal,original_rhrs,native TFT ,5.498,6.989,0.432,0.664
+14,EQUAL_WEIGHT_RHRS,Native TFT with equal-weight RHRS target,target_weighting_sensitivity,equal_weight_rhrs,native TFT ,5.451,6.938,0.435,0.669

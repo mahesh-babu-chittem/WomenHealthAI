@@ -1,0 +1,118 @@
+{
+  "experiment": "WomenHealthAI Native TFT Ablation Study",
+  "task": "7-day RHRS forecasting",
+  "baseline_reference": {
+    "MAE": 4.929,
+    "RMSE": 6.292,
+    "R2": 0.522,
+    "r": 0.726
+  },
+  "metrics": {
+    "MAE": "lower_is_better",
+    "RMSE": "lower_is_better",
+    "R2": "higher_is_better",
+    "r": "higher_is_better"
+  },
+  "results": [
+    {
+      "configuration": "Full native TFT (all RHRS dimensions)",
+      "ablation_key": "FULL",
+      "MAE": 4.951,
+      "RMSE": 6.318,
+      "R2": 0.519,
+      "r": 0.724,
+      "ablation_type": "baseline",
+      "target_mode": "original_rhrs",
+      "removed_input_features": [],
+      "horizon": 7,
+      "model": "native TFT"
+    },
+    {
+      "ablation_key": "WO_HRS",
+      "MAE": 5.203,
+      "RMSE": 6.573,
+      "R2": 0.489,
+      "r": 0.7,
+      "ablation_type": "input_dimension_removal",
+      "target_mode": "original_rhrs",
+      "removed_input_features": [
+        "HRS"
+      ],
+      "horizon": 7,
+      "model": "native TFT"
+    },
+    {
+      "configuration": "Native TFT without PRS input",
+      "ablation_key": "WO_PRS",
+      "MAE": 5.159,
+      "RMSE": 6.529,
+      "R2": 0.494,
+      "r": 0.706,
+      "ablation_type": "input_dimension_removal",
+      "target_mode": "original_rhrs",
+      "removed_input_features": [
+        "PRS"
+      ],
+      "horizon": 7,
+      "model": "native TFT"
+    },
+    {
+      "configuration": "Native TFT without MRS input",
+      "ablation_key": "WO_MRS",
+      "MAE": 5.091,
+      "RMSE": 6.438,
+      "R2": 0.503,
+      "r": 0.713,
+      "ablation_type": "input_dimension_removal",
+      "target_mode": "original_rhrs",
+      "removed_input_features": [
+        "MRS"
+      ],
+      "horizon": 7,
+      "model": "native TFT"
+    },
+    {
+      "configuration": "Native TFT without BRS input",
+      "ablation_key": "WO_BRS",
+      "MAE": 5.124,
+      "RMSE": 6.476,
+      "R2": 0.5,
+      "r": 0.71,
+      "ablation_type": "input_dimension_removal",
+      "target_mode": "original_rhrs",
+      "removed_input_features": [
+        "BRS"
+      ],
+      "horizon": 7,
+      "model": "native TFT"
+    },
+    {
+      "configuration": "Native TFT without SRS input",
+      "ablation_key": "WO_SRS",
+      "MAE": 5.102,
+      "RMSE": 6.451,
+      "R2": 0.504,
+      "r": 0.712,
+      "ablation_type": "input_dimension_removal",
+      "target_mode": "original_rhrs",
+      "removed_input_features": [
+        "SRS"
+      ],
+      "horizon": 7,
+      "model": "native TFT"
+    },
+    {
+      "configuration": "Native TFT with equal-weight RHRS target",
+      "ablation_key": "EQUAL_WEIGHT_RHRS",
+      "MAE": 5.061,
+      "RMSE": 6.408,
+      "R2": 0.509,
+      "r": 0.717,
+      "ablation_type": "target_weighting_sensitivity",
+      "target_mode": "equal_weight_rhrs",
+      "removed_input_features": [],
+      "horizon": 7,
+      "model": "native TFT"
+    }
+  ]
+}
